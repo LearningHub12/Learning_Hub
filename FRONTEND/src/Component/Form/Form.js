@@ -23,6 +23,12 @@ function Form() {
     const handlesubmit=async(event)=>{
         event.preventDefault();
         const {leetcode,hackerearth,codeforces,codechief}=Links;
+        if(leetcode.length==0||hackerearth.length==0||codeforces.length==0||codechief.length==0)
+        {
+            toast.error("Fill all the Username")
+        }
+        else
+        {
         const user=JSON.parse(localStorage.getItem('userinfo'));
         const response=await axios.post('http://localhost:8000/forms',{leetcode:leetcode,hackerearth:hackerearth,codeforces:codeforces,codechief:codechief,user:user.userdetails.id});
         if(response.data.msg==="Links added successfully")
@@ -39,6 +45,7 @@ function Form() {
         else
         {
             toast.error(response.data.msg);
+        }
         }
     }
   return (

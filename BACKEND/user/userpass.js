@@ -68,17 +68,19 @@ router.post('/login',async(req,res)=>{
     {
     const hasspassword=await bcrypt.compare(password,user.password);
     if(hasspassword){
-        const token=await jwt.sign({username:user.username,email:user.email},"Teamheadismani")
-        const send={
-            username:user.username, 
-            email:email,
-            id:user._id
-        }
+        const token=await jwt.sign({username:user.username,email:user.email},"Teamheadismani");
         res.json({
             msg:"Login successfully",
-            user:send,
-            token:token
-        });
+            user:{
+                userdetails:{
+                    id:user._id,
+                    email:user.email,
+                    username:user.username,
+                    links:user.links,
+                }
+            },
+            token:token,
+        })
     }
     else{
         res.json({msg:"Invalid username or password"});

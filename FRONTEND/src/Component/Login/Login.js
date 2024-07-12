@@ -31,7 +31,7 @@ function Login() {
       if (response.data.msg === "Login successfully") {
         localStorage.setItem('userinfo', JSON.stringify(response.data.user));
         localStorage.setItem('jwt', JSON.stringify(response.data.token));
-        toast.success('Login Successfully', {
+        toast.success(response.data.msg, {
           onClose:()=>{
             navigate('/home');
           },
