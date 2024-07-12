@@ -1,9 +1,12 @@
-.body{
+body{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(70, 4, 128);
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
 .box{
@@ -11,21 +14,24 @@
     flex-direction: column;
     background-color: rgba(146, 197, 212, 0.767);
     gap: 20px;
-    margin-top: 200px;
+    margin-top: 10vh; /* Use vh for better responsiveness */
     border-radius: 20px;
     padding: 20px;
-    width: 600px;
+    width: 80%; /* Use percentage for better responsiveness */
+    max-width: 600px; /* Maintain the max width */
     border: 4px solid rgb(168, 136, 136);
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 40px;
+    font-size: 2.5rem; /* Use rem for font size */
     gap: 20px;
     padding: 20px;
     width: auto;
+    text-align: center; /* Ensure text is centered */
 }
 
 .login{
@@ -45,6 +51,8 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%; /* Ensure inputs section takes full width */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
 .input{
@@ -53,20 +61,23 @@
     align-items: center;
     gap: 10px;
     height: 60px;
-    width: 400px;
+    width: 100%; /* Use percentage for better responsiveness */
+    max-width: 400px; /* Maintain the max width */
     margin-top: 25px;
     border-radius: 10px;
     background-color: aliceblue;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
     input{
         height: 55px;
-        width: 500px;
+        width: 100%; /* Ensure input takes full width */
         border: none;
         outline: none;
-        font-size: 20px;
+        font-size: 1.25rem; /* Use rem for font size */
         font-weight: 400;
         border-radius: 10px;
         text-align: center;
         background-color: aliceblue;
+        box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
     }
 }
 
@@ -74,7 +85,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    font-size: 20px;
+    font-size: 1.25rem; /* Use rem for font size */
     font-weight: 500;
     color: rebeccapurple;
 }
@@ -89,14 +100,21 @@
     height: 50px;
     width: 120px;
     border-radius: 20px;
+    display: flex; /* Ensure button is centered */
+    justify-content: center; /* Ensure button is centered */
+    align-items: center; /* Ensure button is centered */
     button{
         cursor: pointer;
         height: 50px;
         width: 120px;
         border-radius: 30px;
-        font-size: 20px;
+        font-size: 1.25rem; /* Use rem for font size */
         color: rgb(250, 252, 255);
         background-color: rgb(85, 34, 127);
+        display: flex; /* Ensure button text is centered */
+        justify-content: center; /* Ensure button text is centered */
+        align-items: center; /* Ensure button text is centered */
+        box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
     }
     button:hover{
         background-color: rgb(102, 61, 152);
