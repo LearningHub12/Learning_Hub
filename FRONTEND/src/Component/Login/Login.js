@@ -44,7 +44,7 @@ function Login() {
   };
 
   return (
-    <div className='body'>
+    <div className='body-login'>
       <div className='box'>
         <div className='header'>
           <div className='login'>Login Form</div>

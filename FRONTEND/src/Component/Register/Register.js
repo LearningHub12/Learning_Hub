@@ -52,10 +52,10 @@ function Register() {
   };
 
   return (
-    <div className='body'>
+    <div className='body-register'>
       <div className='box'>
         <div className='header'>
-          <div className='register'>Register Form</div>
+          <div className='login'>Register Form</div>
           <div className='underline'></div>
         </div>
         <form className='inputs' onSubmit={(e) => handleSubmit(e)}>
