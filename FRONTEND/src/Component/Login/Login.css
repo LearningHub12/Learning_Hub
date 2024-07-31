@@ -4,21 +4,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(70, 4, 128);
     
 }
 
 .box{
     display: flex;
     flex-direction: column;
-    background-color: rgba(146, 197, 212, 0.767);
+    background-color:rgb(255, 255, 255);
     gap: 20px;
-    border-radius: 20px;
     padding: 0px;
     width: 90%; 
     max-width: 600px; 
-}
-
+    box-shadow: 2px 2px 5px,-2px -2px 5px;
+  }
 .header{
     display: flex;
     flex-direction: column;
@@ -31,7 +29,7 @@
 }
 
 .login{
-    color: rgb(51, 0, 96);
+    color:black;
     font-weight: 700;
 }
 
@@ -39,7 +37,7 @@
     height: 10px;
     width: 100px;
     border-radius: 10px;
-    background-color: rgb(51, 0, 96);
+    background-color:black;
 }
 
 .inputs{
@@ -84,7 +82,8 @@
     gap: 10px;
     font-size: 1rem; 
     font-weight: 500;
-    color: rebeccapurple;
+    color:black;
+    padding: 10px;
 }
 
 .register1{
@@ -100,6 +99,7 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    padding: 10px;
 }
 
 .submit button{
@@ -109,7 +109,7 @@
     border-radius: 30px;
     font-size: 1rem;
     color: rgb(250, 252, 255);
-    background-color: rgb(85, 34, 127);
+    background-color: black;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -118,7 +118,7 @@
 }
 
 .submit button:hover{
-    background-color: rgb(102, 61, 152);
+    background-color: rgb(66, 61, 71);
 }
 
 .icon{
